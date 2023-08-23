@@ -47,7 +47,11 @@ export default class App extends React.Component {
         }
     }
     componentDidUpdate(prevProps, prevState) {
-        console.log("runs when updated")
+        if (prevState.dogs !== this.state.dogs) {
+            if (this.state.breed === "chihuahua") {
+                fetchData().then(res=> this.setState({...this.state, dogs : res.message }))
+            }
+        }
     }
     changeSelect = e => {
         this.setState({...this.state, select : e.target.value})
