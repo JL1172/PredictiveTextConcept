@@ -5,3 +5,7 @@
 img {
   object-fit: contain;
 }
+select {
+  outline: none;
+  border: none;
+}
