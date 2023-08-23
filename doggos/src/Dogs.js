@@ -5,7 +5,7 @@ export default class Dogs extends React.Component {
         return (
             <div>
               {this.props.dogs.map((n,i)=> {
-                return <img key = {i}src = {n}/>
+                return <img width="200" height = "200" key = {i}src = {n}/>
               })}
             </div>
         )
