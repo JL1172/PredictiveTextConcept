@@ -47,7 +47,7 @@ export default class App extends React.Component {
         }
     }
     componentDidUpdate(prevProps, prevState) {
-
+        console.log("runs when updated")
     }
     changeSelect = e => {
         this.setState({...this.state, select : e.target.value})
