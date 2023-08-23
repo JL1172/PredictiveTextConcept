@@ -2,3 +2,8 @@
     font-family: sans-serif;
     text-align: center;
   }  
+  img {
+    aspect-ratio: 3/4;
+    width: 15%;
+    object-fit: contain;
+  }

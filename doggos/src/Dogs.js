@@ -1,11 +1,12 @@
 import React from "react";
-import Dog from "./Dog";
 
 export default class Dogs extends React.Component {
     render() {
         return (
             <div>
-                <Dog />
+              {this.props.dogs.map((n,i)=> {
+                return <img key = {i}src = {n}/>
+              })}
             </div>
         )
     }
